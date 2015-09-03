@@ -1,7 +1,8 @@
 Free Agent Pelican theme
 =========================
 
-Pelican theme based on [Freelancer bootstrap theme ](http://ironsummitmedia.github.io/startbootstrap-freelancer/) and modified to resemble [Agency bootstrap theme](http://ironsummitmedia.github.io/startbootstrap-agency/)
+Pelican theme based on [Freelancer bootstrap theme ](http://ironsummitmedia.github.io/startbootstrap-freelancer/), which was ported by [https://github.com/ondoheer/freelancer-theme-pelican/tree/master/templates](https://github.com/ondoheer/freelancer-theme-pelican/tree/master/templates).  
+I modified it to resemble [Agency bootstrap theme](http://ironsummitmedia.github.io/startbootstrap-agency/), so I named it Free Agent, since it's a frankenstein of the two themes.  
 This README is based on [Jerome Lachaud]'s jekyll theme(https://github.com/jeromelachaud/freelancer-theme)
 
 ## How to use
