@@ -1,0 +1,207 @@
+{% extends "base.html" %}
+
+{% block title %}
+	{{SITENAME}}
+{% endblock %}
+
+{% block nav %}
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#page-top">{{SITENAME}}</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+            {% for link, title  in NAVLINKS %}
+            	{%if link == '' %}
+            	<li class="hidden">
+                    <a href="{{link}}"></a>
+                </li>
+                {% else %}
+                <li class="page-scroll">
+                    <a href="{{link}}">{{title}}</a>
+                </li>
+                {% endif %}
+            {% endfor %}
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+{% endblock %}
+
+{% block header %}
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <!--img class="img-responsive" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/profile.png" alt=""-->
+                <div class="intro-text">
+									<span class="name">{{SITETITLE}}</span>
+									<hr class="star-light">
+
+                    <span class="skills">{{SITESUBTITLE}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+{% endblock %}
+
+{% block grid %}
+
+<!-- Portfolio Grid Section -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>{{PORTFOLIO}}</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+
+        <div class="row">
+        {% if articles %}
+        	{% for article in articles_page.object_list %}
+
+	        <div class="col-sm-4 portfolio-item">
+	        	    <a href="#portfolioModal{{loop.index}}" class="portfolio-link" data-toggle="modal">
+	        	        <div class="caption">
+	        	            <div class="caption-content">
+	        	                <i class="fa fa-search-plus fa-3x"></i>
+	        	            </div>
+	        	        </div>
+	        	        <img src="{{ SITEURL }}/images/portfolio/{{article.image}}" class="img-responsive" alt=""> <!-- {{ SITEURL }}/{{ THEME_STATIC_DIR }} -->
+	        	    </a>
+	        	</div>
+	        {% endfor %}
+        {% endif %}
+
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
+
+
+
+{% block contact %}
+	<!-- Contact Section -->
+	<section id="contact">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-lg-12 text-center">
+	                <h2>Contact Me</h2>
+	                <hr class="star-primary">
+	            </div>
+	        </div>
+	        <div class="row">
+	            <div class="col-lg-8 col-lg-offset-2">
+	                <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+	                <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+	                <form  name="sentMessage" id="contactForm" novalidate>
+						{% for field in CONTACT_FIELDS %}
+							<div class="row control-group">
+							    <div class="form-group col-xs-12 floating-label-form-group controls">
+
+								{% if field[1] == 'textarea' %}
+
+							        <label>{{field[0]}}</label>
+							        <textarea rows="5" class="form-control" placeholder="{{field[0]}}" id="{{field[2]}}" required data-validation-required-message="{{field[3]}}"></textarea>
+							        <p class="help-block text-danger"></p>
+
+								{% else %}
+
+							        <label>{{field[0]}}</label>
+							        <input type="{{field[1]}}" class="form-control" placeholder="{{field[0]}}" id="{{field[2]}}" required data-validation-required-message="{{field[3]}}">
+							        <p class="help-block text-danger"></p>
+
+								{% endif %}
+
+
+
+							    </div>
+							</div>
+
+						{% endfor %}
+
+
+	                    <br>
+	                    <div id="success"></div>
+	                    <div class="row">
+	                        <div class="form-group col-xs-12">
+	                            <button type="submit" class="btn btn-success btn-lg">Send</button>
+	                        </div>
+	                    </div>
+	                </form>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+{% endblock %}
+<!-- end contact section -->
+
+
+{% block modals %}
+	{% if articles %}
+    	{% for article in articles_page.object_list %}
+			<div class="portfolio-modal modal fade" id="portfolioModal{{loop.index}}" tabindex="-1" role="dialog" aria-hidden="true">
+			    <div class="modal-content">
+			        <div class="close-modal" data-dismiss="modal">
+			            <div class="lr">
+			                <div class="rl">
+			                </div>
+			            </div>
+			        </div>
+			        <div class="container">
+			            <div class="row">
+			                <div class="col-lg-8 col-lg-offset-2">
+			                    <div class="modal-body">
+			                        <h2>{{article.title}}</h2>
+			                        <hr class="star-primary">
+			                        <img src="{{ SITEURL }}/images/portfolio/{{article.image}}" class="img-responsive img-centered" alt=""><!-- {{ SITEURL }}/{{ THEME_STATIC_DIR }} -->
+			                        <p>{{article.content}}</p>
+			                        <ul class="list-inline item-details">
+			                            <li>Client:
+			                                <strong><a href="{{article.client_link}}">{{article.client}}</a>
+			                                </strong>
+			                            </li>
+			                            <li>Date:
+			                                <strong><a href="http://startbootstrap.com">{{article.date}}</a>
+			                                </strong>
+			                            </li>
+			                            <li>Service:
+			                                <strong><a href="http://startbootstrap.com">{{article.service}}</a>
+			                                </strong>
+			                            </li>
+			                        </ul>
+			                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+		{% endfor %}
+	{% endif %}
+
+	<!-- Portfolio Modals -->
+
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% block scripts %}
+
+	{% for script in SCRIPTS %}
+	
+		{% if script|first == 'h' or script|first == '/' %}
+		<!-- script is a url -->
+			<script src="{{script}}"></script>
+		
+		{% else %}
+		<!-- script is a local library -->
+			<script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/{{script}}"></script>
+		{% endif %}
+		
+	{% endfor %}
+	
+{% endblock %}

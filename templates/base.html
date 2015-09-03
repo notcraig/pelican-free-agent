@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="{{AUTHOR}}">
+
+    <title>{% block title %}{% endblock %}</title>
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ BOOTSTRAP_FILE }}" rel="stylesheet">
+<!-- {{ SITEURL }}/{{ THEME_STATIC_DIR }} -->
+    <!-- Custom CSS -->
+    <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{CSS_FILE}}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{FONTS}}/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+	<!-- RSS FEEDS -->
+    {% if FEED_ALL_ATOM %}
+    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
+    {% endif %}
+    {% if FEED_ALL_RSS %}
+    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+    {% endif %}
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+{% block nav %}
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block grid %}
+{% endblock %}
+
+{% include 'about.html'%}
+
+{% block contact %}
+{% endblock %}
+
+{% include 'footer.html'%}
+
+{% include 'scroll.html'%}
+
+{% block modals %}
+
+{% endblock %}
+
+{% include 'scripts.html'%}
+
+</body>
+
+</html>
