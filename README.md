@@ -47,7 +47,7 @@ The footer uses font awesome icons for the social links
 ## Screenshot
 ![screenshot](/screenshot-freeagent.png)  
 
-View this Pelican theme in action [here](https:/callmefish.com)
+View this Pelican theme in action [here](http://callmefish.com)
 
 
 
