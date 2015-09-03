@@ -9,7 +9,7 @@ SITESUBTITLE = "A bootstrap one page theme for Pelican"
 SITEURL = 'http://localhost:8000'
 
 
-THEME = '/home/fish/projects/pelican-themes/gitfreeagent'
+THEME = 'pelican-free-agent'
 THEME_STATIC_DIR = 'theme'
 PATH = 'content'
 #STATIC_PATHS = [ 'mail','js', 'css', 'fonts']
