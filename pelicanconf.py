@@ -45,6 +45,7 @@ DELETE_OUTPUT_DIRECTORY = True
 # Top Menu Links
 NAVLINKS = (
 	#('#page-top', 'Home'),
+	('#services','Services'),
 	('#portfolio', 'Portfolio'),
 	('#about', 'About'),
 	('#contact', 'Contact')
