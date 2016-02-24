@@ -81,7 +81,7 @@ hr.star-primary:after {
 
 header {
   background-attachment: scroll;
-  background-image: url(/images/header-bg.jpg);
+  background-image: url(/theme/images/header-bg.jpg);
   background-position: center center;
   background-repeat: none;
   -webkit-background-size: cover;
