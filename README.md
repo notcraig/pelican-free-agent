@@ -1,5 +1,7 @@
 Free Agent Pelican theme
 =========================
+Mail is b0rked. Trying to get that sorted. *sigh*
+
 
 Pelican theme based on [Freelancer bootstrap theme ](http://ironsummitmedia.github.io/startbootstrap-freelancer/), which was ported to Pelican by [ondoheer](https://github.com/ondoheer/freelancer-theme-pelican/tree/master/templates) from the [Jekyll version](https://github.com/y7kim/agency-jekyll-theme).  
 I modified it to resemble [Agency bootstrap theme](http://ironsummitmedia.github.io/startbootstrap-agency/), so I named it "Free Agent", since it's kind of a "Frankenstein's monster" of the two themes.  
