@@ -62,5 +62,7 @@ CONTACT_FIELDS = (
 ADDRESS1 = '1234 Street Ave'
 ADDRESS2 = 'Any City, Any Place'
 
+ABOUT1 = 'Take me to your leader! Switzerland is small and neutral! We are more like Germany, ambitious and misunderstood! I\'m Santa Claus! And so we say goodbye to our beloved pet, Nibbler, who\'s gone to a place where I, too, hope one day to go. The toilet.</p><p>Wow, you got that off the Internet? In my day, the Internet was only used to download pornography. <strong> I meant \'physically\'.</strong> <em> Look, perhaps you could let me work for a little food?</em> I could clean the floors or paint a fence, or service you sexually?</p><h3>Guess again.</h3>'
 
+ABOUT2 = '<p>It\'s a fez. I wear a fez now. Fezes are cool. You know how I sometimes have really brilliant ideas? You know when grown-ups tell you \'everything\'s going to be fine\' and you think they\'re probably lying to make you feel better?</p><p>You hate me; you want to kill me! Well, go on! Kill me! KILL ME! It\'s art! A statement on modern society, \'Oh Ain\'t Modern Society Awful? \'! <strong> All I\'ve got to do is pass as an ordinary human being.</strong> <em> Simple.</em> What could possibly go wrong?</p><p>Father Christmas. Santa Claus. Or as I\'ve always known him: Jeff.</p>'
 
