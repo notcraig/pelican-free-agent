@@ -2,23 +2,24 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'Free Agent'
-SITENAME = 'Free Agent Theme'
-SITESUBTITLE = 'Web Developer - Graphic Artist - User Experience Designer'
+AUTHOR = '𝞋wave'
+SITENAME = 'Free Agent'
+SITESUBTITLE = 'Something - Something - Dark Side'
 SITEURL = ''
 
 
-THEME = '/Users/fish/Projects/pelican-themes/pelican-free-agent-revisited'
 THEME_STATIC_DIR = 'static'
 PATH = 'content'
-STATIC_PATHS = ['images', 'js', 'css', 'fonts']
-TIMEZONE = 'America/Lima'
+STATIC_PATHS = [ 'images','mail','js', 'css', 'fonts']
+EXTRA_PATH_METADATA = {
+    'static/images/portfolio': {'path': 'images/portfolio'},
+    }
+TIMEZONE = 'America/Phoenix'
 
 DEFAULT_LANG = 'en'
 BOOTSTRAP_FILE = 'bootstrap.min.css'
 CSS_FILE = 'freeagent.css'
 FONTS = 'fonts'
-
 SCRIPTS = [
 	'jquery-1.11.0.js',
 	'bootstrap.min.js',
@@ -46,7 +47,7 @@ NAVLINKS = (
 )
 
 # Portfolio Name
-PORTFOLIO = 'Personal Projects'
+PORTFOLIO = 'Portfolio'
 
 
 
@@ -57,5 +58,10 @@ CONTACT_FIELDS = (
 	['Phone Number', 'tel', 'phone', 'Please enter your phone number.'],
 	['Message', 'textarea', 'message', 'Please enter a message.']
 )
+
+# Free Agent specifics
+ADDRESS1 = '1234 Street Ave'
+ADDRESS2 = 'Any City, Any Place'
+
 
 
