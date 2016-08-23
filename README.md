@@ -45,8 +45,13 @@ It utilizes the static/js/contact_me.js script and passes the form  POST data to
 The footer uses font awesome icons for the social links  
 
 
-## Screenshot
-![screenshot](/screenshot-freeagent.png)  
+## Screenshots
+![Landing Page](https://github.com/thetawavestudio/pelican-free-agent/blob/master/screenshots/landing.png)  
+![Portfolio](https://github.com/thetawavestudio/pelican-free-agent/blob/master/screenshots/portfolio.png)  
+![Modal](https://github.com/thetawavestudio/pelican-free-agent/blob/master/screenshots/modal.png)  
+![Contact](https://github.com/thetawavestudio/pelican-free-agent/blob/master/screenshots/contact.png) 
+![Footer](https://github.com/thetawavestudio/pelican-free-agent/blob/master/screenshots/footer.png)  
+![Full Length](https://github.com/thetawavestudio/pelican-free-agent/blob/master/screenshots/full.png)  
 
 
 
