@@ -41,22 +41,22 @@ It utilizes the static/js/contact_me.js script and passes the form  POST data to
    `{% include 'contact_static.html'}`  
   - edit `templates/contact_static.html` to use your online form service of choice.
 
-## footer  
+## Footer  
 The footer uses font awesome icons for the social links  
 
 
 ## Screenshots
-*Landing:*  
-![Landing Page](https://github.com/thetawavestudio/pelican-free-agent/blob/master/screenshots/landing.png)  
-*Portfolio:*  
+**Landing:**  
+![Landing Page](https://github.com/thetawavestudio/pelican-free-agent/blob/master/screenshots/landingpage.png)  
+**Portfolio:**  
 ![Portfolio](https://github.com/thetawavestudio/pelican-free-agent/blob/master/screenshots/portfolio.png)  
-*Modal:* 
+**Modal:**
 ![Modal](https://github.com/thetawavestudio/pelican-free-agent/blob/master/screenshots/modal.png)  
-*Contact:*  
+**Contact:**  
 ![Contact](https://github.com/thetawavestudio/pelican-free-agent/blob/master/screenshots/contact.png) 
-*Footer:*  
+**Footer:**  
 ![Footer](https://github.com/thetawavestudio/pelican-free-agent/blob/master/screenshots/footer.png)  
-*The whole shebang:*  
+**The whole shebang:**  
 ![Full Length](https://github.com/thetawavestudio/pelican-free-agent/blob/master/screenshots/full.png)  
 
 
