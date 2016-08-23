@@ -46,11 +46,17 @@ The footer uses font awesome icons for the social links
 
 
 ## Screenshots
+Landing:  
 ![Landing Page](https://github.com/thetawavestudio/pelican-free-agent/blob/master/screenshots/landing.png)  
+Portfolio:  
 ![Portfolio](https://github.com/thetawavestudio/pelican-free-agent/blob/master/screenshots/portfolio.png)  
+Modal:  
 ![Modal](https://github.com/thetawavestudio/pelican-free-agent/blob/master/screenshots/modal.png)  
+Contact:  
 ![Contact](https://github.com/thetawavestudio/pelican-free-agent/blob/master/screenshots/contact.png) 
+Footer:  
 ![Footer](https://github.com/thetawavestudio/pelican-free-agent/blob/master/screenshots/footer.png)  
+The whole shebang:  
 ![Full Length](https://github.com/thetawavestudio/pelican-free-agent/blob/master/screenshots/full.png)  
 
 
