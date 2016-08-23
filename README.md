@@ -3,7 +3,7 @@ Free Agent Pelican theme
 
 Pelican theme based on [Freelancer bootstrap theme ](http://ironsummitmedia.github.io/startbootstrap-freelancer/), which was ported to Pelican by [ondoheer](https://github.com/ondoheer/freelancer-theme-pelican/tree/master/templates) from the [Jekyll version](https://github.com/y7kim/agency-jekyll-theme).  
 I modified it to resemble [Agency bootstrap theme](https://github.com/BlackrockDigital/startbootstrap-agency), so I named it "Free Agent", since it's kind of a "Frankenstein's monster" of the two themes.  
-This README is based on [Jerome Lachaud](https://github.com/jeromelachaud/freelancer-theme)'s
+This README is based on [Jerome Lachaud](https://github.com/jeromelachaud/freelancer-theme)'s version.
 
 ## How to use
  - Replace `static/images/header-bg.png` with the image of your choice
@@ -30,7 +30,7 @@ The default is already in the index.html file.
 It utilizes the static/js/contact_me.js script and passes the form  POST data to `static/mail/contact_me.php`.  
 `contact_me.php` uses curl to send the form data via sendgrid (or mandrill et al)
 #### contact_me.js
- - edit the `url:` to point to your domain  
+ - edit the `url:` to point to your domain  (e.g., http://yourdomain.com/static/mail/contact_me.php)
 
 #### contact_me.php
  - edit the variables necessary to use sendgrid, mandrill etc.
@@ -63,4 +63,4 @@ The footer uses font awesome icons for the social links
 
 
 =========
-For more details, read [documentation](http://pelican.readthedocs.org)
+For more details, read the [documentation](http://pelican.readthedocs.org)
