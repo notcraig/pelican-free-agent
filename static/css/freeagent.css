@@ -182,7 +182,7 @@ header .intro-text .skills {
     letter-spacing: 1px;
 }
 
-.navbar .navbar-nav li a:focus {
+.navbar .navbar-nav li a:focus, a.focus {
     outline: 0;
 }
 
