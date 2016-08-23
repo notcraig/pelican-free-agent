@@ -13,12 +13,12 @@
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ BOOTSTRAP_FILE }}" rel="stylesheet">
-<!-- {{ SITEURL }}/{{ THEME_STATIC_DIR }} -->
+
     <!-- Custom CSS -->
     <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{CSS_FILE}}" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{FONTS}}/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{FONTS}}/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -40,20 +40,19 @@
 </head>
 
 <body id="page-top" class="index">
-{% block nav %}
+{% block nav %}	
 {% endblock %}
 
 {% block header %}
-
+	
 {% endblock %}
-{% include 'services.html'%}
 
 {% block grid %}
 {% endblock %}
+
 {% include 'about.html'%}
 
-
-{% block contact %}
+{% block contact %}	
 {% endblock %}
 
 {% include 'footer.html'%}
@@ -61,7 +60,7 @@
 {% include 'scroll.html'%}
 
 {% block modals %}
-
+	
 {% endblock %}
 
 {% include 'scripts.html'%}

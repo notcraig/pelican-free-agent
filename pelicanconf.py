@@ -3,21 +3,16 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Free Agent'
-SITENAME = 'Free Agent'
-SITETITLE = 'Free Agent'
-SITESUBTITLE = "A bootstrap one page theme for Pelican"
-SITEURL = 'http://localhost:8000'
+SITENAME = 'Free Agent Theme'
+SITESUBTITLE = 'Web Developer - Graphic Artist - User Experience Designer'
+SITEURL = ''
 
 
-THEME = 'pelican-free-agent'
-THEME_STATIC_DIR = 'theme'
+THEME = '/Users/fish/Projects/pelican-themes/pelican-free-agent-revisited'
+THEME_STATIC_DIR = 'static'
 PATH = 'content'
-#STATIC_PATHS = [ 'mail','js', 'css', 'fonts']
-#add images back in above
-# EXTRA_PATH_METADATA = {
-#     'static/images/portfolio': {'path': 'images/portfolio'},
-#     }
-TIMEZONE = 'America/Phoenix'
+STATIC_PATHS = ['images', 'js', 'css', 'fonts']
+TIMEZONE = 'America/Lima'
 
 DEFAULT_LANG = 'en'
 BOOTSTRAP_FILE = 'bootstrap.min.css'
@@ -41,18 +36,17 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 DIRECT_TEMPLATES = ['index']
-DELETE_OUTPUT_DIRECTORY = True
+
 # Top Menu Links
 NAVLINKS = (
-	#('#page-top', 'Home'),
-	('#services','Services'),
+	('#page-top', ''),
 	('#portfolio', 'Portfolio'),
 	('#about', 'About'),
 	('#contact', 'Contact')
 )
 
 # Portfolio Name
-PORTFOLIO = 'Portfolio'
+PORTFOLIO = 'Personal Projects'
 
 
 
@@ -60,6 +54,8 @@ PORTFOLIO = 'Portfolio'
 CONTACT_FIELDS = (
 	['Name', 'text', 'name', 'Please enter your name.'],
 	['Email Address', 'email', 'email','Please enter your email address.' ],
-
+	['Phone Number', 'tel', 'phone', 'Please enter your phone number.'],
 	['Message', 'textarea', 'message', 'Please enter a message.']
 )
+
+

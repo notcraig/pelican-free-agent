@@ -23,7 +23,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
             {% for link, title  in NAVLINKS %}
-            	{%if link == '' %}
+            	{%if title == '' %}
             	<li class="hidden">
                     <a href="{{link}}"></a>
                 </li>
@@ -32,14 +32,14 @@
                     <a href="{{link}}">{{title}}</a>
                 </li>
                 {% endif %}
-            {% endfor %}
+            {% endfor %}                
             </ul>
         </div>
         <!-- /.navbar-collapse -->
     </div>
     <!-- /.container-fluid -->
 </nav>
-
+	
 {% endblock %}
 
 {% block header %}
@@ -49,18 +49,17 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <!--img class="img-responsive" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/profile.png" alt=""-->
+                <!-- <img class="img-responsive" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/header-bg.jpg" alt=""> -->
                 <div class="intro-text">
-									<span class="name">{{SITETITLE}}</span>
-									<hr class="star-light">
-
+                    <span class="name">{{SITENAME}}</span>
+                    <hr class="star-light">
                     <span class="skills">{{SITESUBTITLE}}</span>
                 </div>
             </div>
         </div>
     </div>
 </header>
-
+	
 {% endblock %}
 
 {% block grid %}
@@ -77,8 +76,8 @@
 
         <div class="row">
         {% if articles %}
-        	{% for article in articles_page.object_list %}
-
+        	{% for article in articles_page.object_list %}         	
+    
 	        <div class="col-sm-4 portfolio-item">
 	        	    <a href="#portfolioModal{{loop.index}}" class="portfolio-link" data-toggle="modal">
 	        	        <div class="caption">
@@ -86,17 +85,17 @@
 	        	                <i class="fa fa-search-plus fa-3x"></i>
 	        	            </div>
 	        	        </div>
-	        	        <img src="{{ SITEURL }}/images/portfolio/{{article.image}}" class="img-responsive" alt=""> <!-- {{ SITEURL }}/{{ THEME_STATIC_DIR }} -->
+	        	        <img src="{{ SITEURL }}/images/portfolio/{{article.image}}" class="img-responsive" alt="">
 	        	    </a>
 	        	</div>
 	        {% endfor %}
         {% endif %}
-
+            
         </div>
     </div>
 </section>
 
-
+	
 {% endblock %}
 
 
@@ -115,33 +114,33 @@
 	            <div class="col-lg-8 col-lg-offset-2">
 	                <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
 	                <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-	                <form  name="sentMessage" id="contactForm" novalidate>
+	                <form name="sentMessage" id="contactForm" novalidate>
 						{% for field in CONTACT_FIELDS %}
 							<div class="row control-group">
 							    <div class="form-group col-xs-12 floating-label-form-group controls">
-
-								{% if field[1] == 'textarea' %}
+							
+								{% if field[1] == 'textarea' %}		
 
 							        <label>{{field[0]}}</label>
 							        <textarea rows="5" class="form-control" placeholder="{{field[0]}}" id="{{field[2]}}" required data-validation-required-message="{{field[3]}}"></textarea>
 							        <p class="help-block text-danger"></p>
-
+									
 								{% else %}
-
+									
 							        <label>{{field[0]}}</label>
 							        <input type="{{field[1]}}" class="form-control" placeholder="{{field[0]}}" id="{{field[2]}}" required data-validation-required-message="{{field[3]}}">
 							        <p class="help-block text-danger"></p>
-
+									 
 								{% endif %}
 
-
-
+								
+							
 							    </div>
 							</div>
-
+							
 						{% endfor %}
 
-
+	                   
 	                    <br>
 	                    <div id="success"></div>
 	                    <div class="row">
@@ -154,8 +153,8 @@
 	        </div>
 	    </div>
 	</section>
-{% endblock %}
-<!-- end contact section -->
+{% endblock %}	
+
 
 
 {% block modals %}
@@ -175,17 +174,19 @@
 			                    <div class="modal-body">
 			                        <h2>{{article.title}}</h2>
 			                        <hr class="star-primary">
-			                        <img src="{{ SITEURL }}/images/portfolio/{{article.image}}" class="img-responsive img-centered" alt=""><!-- {{ SITEURL }}/{{ THEME_STATIC_DIR }} -->
+			                        <img src="{{ SITEURL }}/images/portfolio/{{article.image}}" class="img-responsive img-centered" alt="">
 			                        <p>{{article.content}}</p>
 			                        <ul class="list-inline item-details">
 			                            <li>Client:
 			                                <strong><a href="{{article.client_link}}">{{article.client}}</a>
 			                                </strong>
 			                            </li>
-			                            <li>Date:
+			                            <!-- 
+<li>Date:
 			                                <strong><a href="http://startbootstrap.com">{{article.date}}</a>
 			                                </strong>
 			                            </li>
+ -->
 			                            <li>Service:
 			                                <strong><a href="http://startbootstrap.com">{{article.service}}</a>
 			                                </strong>
@@ -202,6 +203,6 @@
 	{% endif %}
 
 	<!-- Portfolio Modals -->
-
-
+	
+	
 {% endblock %}
