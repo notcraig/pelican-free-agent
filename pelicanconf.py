@@ -59,7 +59,6 @@ CONTACT_FIELDS = (
 	['Message', 'textarea', 'message', 'Please enter a message.']
 )
 
-# Free Agent specifics
 ADDRESS1 = '1234 Street Ave'
 ADDRESS2 = 'Any City, Any Place'
 
