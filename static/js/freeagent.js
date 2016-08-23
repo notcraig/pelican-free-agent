@@ -35,3 +35,11 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+
+$(document).ready(function() {
+        // put all your jQuery goodness in here.
+        document.getElementById('focusme').focus();
+    });
+
+
