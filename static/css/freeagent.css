@@ -19,6 +19,10 @@ p.small {
 a,
 a:hover,
 a:focus,
+a.focus {
+    outline: 0;
+    color: #fed136;
+},
 a:active,
 a.active {
     outline: 0;
