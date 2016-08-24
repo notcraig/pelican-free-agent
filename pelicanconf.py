@@ -59,7 +59,7 @@ CONTACT_FIELDS = (
 	['Message', 'textarea', 'message', 'Please enter a message.']
 )
 
-ADDRESS1 = '1234 Street Ave'
+ADDRESS1 = 'The Internet'
 ADDRESS2 = 'Any City, Any Place'
 
 ABOUT1 = 'Take me to your leader! Switzerland is small and neutral! We are more like Germany, ambitious and misunderstood! I\'m Santa Claus! And so we say goodbye to our beloved pet, Nibbler, who\'s gone to a place where I, too, hope one day to go. The toilet.</p><p>Wow, you got that off the Internet? In my day, the Internet was only used to download pornography. <strong> I meant \'physically\'.</strong> <em> Look, perhaps you could let me work for a little food?</em> I could clean the floors or paint a fence, or service you sexually?</p><h3>Guess again.</h3>'
