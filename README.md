@@ -40,7 +40,7 @@ The default utilizes the static/js/contact_me.js script and passes the form  POS
    `{% include 'contact_static.html'}`  
   - edit `templates/contact_static.html` to use your online form service of choice.
 
-#### Configuration
+## Configuration
 The address in the footer
 ```
 ADDRESS1 = 'The Internet'
