@@ -55,8 +55,7 @@ ABOUT_RIGHT = '<p>It\'s a fez. I wear a fez now. Fezes are cool. You know how I 
 ABOUT_CENTER = '<a href="https://github.com/thetawavestudio" target="_blank" class="btn btn-lg btn-outline"><i class="fa fa-download">Go to my Github</i> </a>'
 ```
 
-## Footer  
-The footer uses font awesome icons for the social links  
+
 
 
 ## Screenshots
