@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = '𝞋wave'
+AUTHOR = 'Free Agent'
 SITENAME = 'Free Agent'
 SITESUBTITLE = 'Something - Something - Dark Side'
 SITEURL = ''
