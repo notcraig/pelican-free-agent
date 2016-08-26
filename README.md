@@ -26,8 +26,7 @@ Here comes the content of my modal "article"... Cred flexitarian meditation, ugh
 ## Contact form
 There are two ways to use the contact form section.  
 ### Default
-The default is already in the index.html file.  
-It utilizes the static/js/contact_me.js script and passes the form  POST data to `static/mail/contact_me.php`.  
+The default utilizes the static/js/contact_me.js script and passes the form  POST data to `static/mail/contact_me.php`.  
 `contact_me.php` uses curl to send the form data via sendgrid (or mandrill et al)
 #### contact_me.js
  - edit the `url:` to point to your domain  (e.g., http://yourdomain.com/static/mail/contact_me.php)
