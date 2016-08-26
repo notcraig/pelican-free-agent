@@ -92,7 +92,7 @@ header {
  */
 header {
   background-attachment: scroll;
-  background-image: url(/static/images/header-bg.jpg);
+  background-image: url(/static/images/header-bg.png);
   background-position: center center;
   background-repeat: none;
   -webkit-background-size: cover;
