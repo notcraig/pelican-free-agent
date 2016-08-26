@@ -40,10 +40,14 @@ The default utilizes the static/js/contact_me.js script and passes the form  POS
    `{% include 'contact_static.html'}`  
   - edit `templates/contact_static.html` to use your online form service of choice.
 
-### About Page
+### Configuration
+The address in the footer
 ```
 ADDRESS1 = 'The Internet'
 ADDRESS2 = 'Any City, Any Place'
+```
+The about page's left, right and center columns
+```
 # Left column
 ABOUT_LEFT = 'Take me to your leader! Switzerland is small and neutral! We are more like Germany, ambitious and misunderstood! I\'m Santa Claus! And so we say goodbye to our beloved pet, Nibbler, who\'s gone to a place where I, too, hope one day to go. The toilet.</p><p>Wow, you got that off the Internet? In my day, the Internet was only used to download pornography. <strong> I meant \'physically\'.</strong> <em> Look, perhaps you could let me work for a little food?</em> I could clean the floors or paint a fence, or service you sexually?</p><h3>Guess again.</h3>'
 # Right column
