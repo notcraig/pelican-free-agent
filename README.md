@@ -21,13 +21,15 @@ Service: Web development
 Here comes the content of my modal "article"... Cred flexitarian meditation, ugh put a bird on it lomo biodiesel disrupt freegan banjo viral. Banjo whatever sriracha paleo. Thundercats hella pour-over, plaid disrupt fixie typewriter tofu ugh viral seitan narwhal.
 ---  
 ```
-## Configuration
-The address in the footer
+## Configuration  
+Several options can be configured in pelicanconf.py
+
+The address in the footer:
 ```
 ADDRESS1 = 'The Internet'
 ADDRESS2 = 'Any City, Any Place'
 ```
-The about page's left, right and center columns
+The about page's left, right and center columns:  
 ```
 ABOUT_LEFT = 'Take me to your leader! Switzerland is small and neutral! We are more like Germany, ambitious and misunderstood! I\'m Santa Claus! And so we say goodbye to our beloved pet, Nibbler, who\'s gone to a place where I, too, hope one day to go. The toilet.</p><p>Wow, you got that off the Internet? In my day, the Internet was only used to download pornography. <strong> I meant \'physically\'.</strong> <em> Look, perhaps you could let me work for a little food?</em> I could clean the floors or paint a fence, or service you sexually?</p><h3>Guess again.</h3>'
 
