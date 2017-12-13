@@ -1,3 +1,6 @@
+Since first creating this Frankentheme, I've done a [direct port of Agency to Pelican](https://github.com/aroaminggeek/Pelican-StartBootstrap-Agency). Use it instead.
+
+
 Free Agent Pelican theme
 =========================
 
